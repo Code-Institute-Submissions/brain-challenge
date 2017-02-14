@@ -1,8 +1,12 @@
 var myApp = angular.module('BrainApp', ['ngRoute', 'RouteControllers', 'ui.bootstrap', 'ngSanitize'])
 
-/* controllers to pass the game instructions a modal box.
-*  I suspect this could be done in a much cleaner way that wouldn't 
-*  necessitate 3 separate templates
+/* Controllers to pass the game instructions a modal box.
+*  This was my beginners attempt, but I knew there was a way of
+*  using controller.js to inject the code into a single controller.
+*  The solution was implemented by Yoni Lavi at 
+*  https://github.com/yoniLavi/brain-challenge/blob/master/js/controller.js
+*  and thus cannot be included in this project. A pull request will be submitted 
+*  to include the code in this project after the submission date.
 */
 myApp.controller('demo1Controller', function($scope, $uibModal) {
     this.uibModal = function() {

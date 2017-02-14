@@ -1,15 +1,15 @@
 <div ng-controller="demo2Controller as demo2">	
 	<div class="topLine">
 		<div class="subtop"></div>
-		<div class="subtop scoreBox"><p></p></div> 
-		<div class="subtop attempts"><p></p></div>
+		<div class="subtop scoreBox"><p></p></div>
 		<div class="subtop instructions">
 		<!--test open modal box for instructions-->
 			<button class="btn btn-danger" ng-click="demo2.uibModal()">Instructions</button>
-		</div>
+		</div> 
+		<div class="subtop attempts"><p></p></div>
 		<div class="subtop"></div>
 	</div>
-
+	<br/>
 	<div class="mainArea">
 		<div class="sideArea area1">
 			<div></div>
@@ -27,6 +27,7 @@
 					<div class="letterBox" id="letter9">M</div>
 				</div>
 				<br/>
+				<br/>
 				<div id="newButton">
 					<button type="button" class="btn btn-danger" onclick="newGame()">Get New Conundrum</button>
 				</div>
@@ -37,6 +38,7 @@
 				  		<input type="submit" class="btn btn-danger" onclick="revealSolution(word)" value="Reveal Solution">
 			  		</form>
 				</div>
+				<br/>
 				<br/>
 				<div class="solutionGrid">
 					<div class="letterBox" id="solution1"></div>
@@ -54,6 +56,7 @@
 			
 		<div class="sideArea area2">
 			<div id="countdownClock">30</div>
+			<br/>
 			<hr/>
 			<div id=answerArea>
 				<p id="checkAnswer"></p>

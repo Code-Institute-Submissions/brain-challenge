@@ -16,6 +16,8 @@ angular.module('RouteControllers', [])
     .controller('ConundrumController', function($scope) {
         
         $scope.scoreBox = "Conundrum Score";
+
+        
         
     })
     .controller('BoardController', function($scope) {

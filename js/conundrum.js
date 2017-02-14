@@ -24,12 +24,14 @@ var lastClick = true;
 //record if start button has been clicked to not allow new word to appear without counting score
 var startClick = false;
 
+
 //initialise new game
 function newGame() {
 	
 	if (startClick == false) {
 		startClick = true
 		lastClick = true;
+		resetScores();
 		resetClock();
 		clearInput();
 		countdown();
@@ -178,4 +180,13 @@ function resetClock() {
 function clearInput() {
 	var box = document.getElementById('userSolve');
 	box.value = '';
+};
+
+//reset the scores to 0 after the view is loaded
+function resetScores() {
+	attemptsString = document.getElementById('totalMoves').innerHTML;
+	if (attemptsString == '0') {
+		score = 0;
+		attempts = 0;
+	}
 };
