@@ -1,4 +1,4 @@
-var myApp = angular.module('BrainApp', ['ngRoute', 'RouteControllers', 'ui.bootstrap', 'ngSanitize'])
+var myApp = angular.module('BrainApp', ['ngRoute', 'RouteControllers', 'ui.bootstrap', 'ngSanitize', 'UserService'])
 
 /* Controllers to pass the game instructions a modal box.
 *  This was my beginners attempt, but I knew there was a way of

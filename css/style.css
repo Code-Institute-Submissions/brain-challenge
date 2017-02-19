@@ -63,3 +63,400 @@ p {
     padding-top: 30px;
 }
 
+/* MemoryBox Game CSS */
+
+.gameContainer {
+    display:flex;
+    flex-direction:row;
+}
+
+.sidePanel {
+    flex:1;
+    text-align: center;
+    
+}
+
+.gamePanel {
+    flex:3;
+    text-align: center;
+    
+}
+
+
+#highScore > p, #yourScore > p {
+    font-size: 20px;
+}
+
+.memBox {
+    width:32%;
+    height:100px;
+    display:inline-block;
+    opacity:0.5; 
+}
+/*
+.memBox:hover {
+    opacity:1; !important;
+}
+*/
+
+#box1 {
+    background-color:red;
+}
+#box2 {
+    background-color:lightskyblue;
+}
+#box3 {
+    background-color:#FF69B4;
+}
+#box4 {
+    background-color:purple;
+}
+#box5 {
+    background-color:green;
+}
+#box6 {
+    background-color:orange;
+}
+#box7 {
+    background-color:#8F6414;
+}
+#box8 {
+    background-color:yellow;
+}
+#box9 {
+    background-color:blue;
+}
+
+#startButton {
+    text-align: center;
+}
+
+/* Mobile screen styling */
+@media screen and (max-width: 480px), screen and (max-device-width: 480px){   
+    
+    .boardArea {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .side1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+
+    .pieceLine {
+        width:65px;
+        height:65px;
+    }
+
+    
+}     
+
+@media screen and (min-width: 481px) and (max-width: 768px), screen and (min-device-width: 481px) and (max-device-width: 768px) {   
+    .boardArea {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .side1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+
+    .pieceLine {
+        width:80px;
+        height:80px;
+        
+    }
+} 
+
+/* Mobile screen styling */
+@media screen and (max-width: 768px){   
+              
+   body{
+       padding-top: 60px;
+   }
+
+   .gameContainer {
+        display:flex;
+        flex-direction:column;
+        margin-top:30px;
+    }
+    .leftPanel {
+        order:3;
+    }
+
+    .rightPanel {
+        order:2;
+    }
+
+    .gamePanel {
+        order:1;
+    }
+
+    .memBox {
+        height:75px;
+    }
+
+/* Conundrum Game CSS */
+
+#instruction {
+    text-align: center;
+    padding:20px;
+}
+
+.mainArea {
+    display:flex;
+    flex-direction: row;
+}
+.sideArea{
+    flex:1;
+    
+}
+
+
+
+.conundrumGrid, .solutionGrid {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-right:auto; 
+    margin-left:auto;
+    border-radius: 10px;
+}
+
+.centreArea {
+    flex:3;
+
+    
+}
+
+.letterBox {
+    width:70px;
+    height:70px;
+    border:1px solid black;
+    background-color: rgb(193,28,28);
+    font-size:48px;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+}
+#solveBox {
+    text-align: center;
+}
+
+#checkAnswer {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#submit {
+    align:right;
+}
+
+#newButton {
+    text-align: center;
+}
+
+#countdownClock {
+    font-size: 30px;
+    text-align: center;
+}
+#monitorScore {
+    text-align: center;
+    font-size: 20px;
+}
+
+#answerArea {
+    height:40px;
+    padding-top: 10px;
+}
+
+/* Mobile screen styling */
+@media screen and (max-width: 480px){   
+
+    .letterBox {
+        width:25px;
+        height:25px;
+        font-size:18px;
+    }
+
+    .area1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+
+    .mainArea {
+        
+        flex-direction: column;
+    }
+}     
+
+@media screen and (min-width: 481px) and (max-width: 768px){   
+    .letterBox {
+        width:50px;
+        height:50px;
+        font-size:30px;
+    }
+    .mainArea {
+        display:flex;
+        flex-direction: column;
+    }
+    .area1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+}    
+
+/* BoardSwap Game CSS */
+
+#instructions {
+    text-align: center;
+}
+
+.boardArea {
+    display:flex;
+    flex-direction: row;
+}
+
+.boardSide {
+    flex:1;
+    
+}
+
+.boardSide > p {
+    font-size: 20px;
+}
+
+.boardCentre {
+    flex:3;
+    
+}
+.arrowContainer {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#arrow1 {
+    
+    color:black;
+    font-size: 300%;
+    
+}
+
+#arrow2 {
+    
+    color: rgb(193,28,28);
+    font-size: 300%;
+}
+
+.gameBox {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-right:auto; 
+    margin-left:auto;
+    border-radius: 10px;
+
+}
+
+.pieceLine {
+    width:90px;
+    height:90px;
+    border-bottom: 1px solid black;
+}
+
+.pieceBox {
+    width:100%;
+    height:90%;
+    border:1px solid black;
+    margin: 0 auto;
+}
+.red {
+    background-color: rgb(193,28,28);
+}
+.black {
+    background-color: black;
+}
+.empty {
+    background-color: white;
+    border:none;
+}
+
+/* Mobile screen styling */
+@media screen and (max-width: 480px){   
+    
+    .boardArea {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .side1 {
+        order:3;
+    }
+
+    .side2 {
+        order:2;
+    }
+    .boardCentre {
+        order:1;
+    }
+
+    .pieceLine {
+        width:65px;
+        height:65px;
+    }
+
+    
+}     
+
+@media screen and (min-width: 481px) and (max-width: 768px){   
+    .boardArea {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .side1 {
+        order:3;
+    }
+
+    .side2 {
+        order:2;
+    }
+    .boardCentre {
+        order:1;
+    }
+
+    .pieceLine {
+        width:80px;
+        height:80px;
+        
+    }
+} 
