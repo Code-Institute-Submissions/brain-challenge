@@ -37,7 +37,7 @@ angular.module('RouteControllers', [])
  
             UserAPIService.registerUser(URL + "accounts/register/", $scope.registrationUser).then(function(results) {
                     $scope.data = results.data;
-                    alert("You have successfully registered to Angular Todo");
+                    alert("You have successfully registered to Brain Challenge");
                 }).catch(function(err) {
                     alert("Oops! Something went wrong!");
                     console.log(err);

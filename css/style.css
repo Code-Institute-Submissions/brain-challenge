@@ -131,85 +131,6 @@ p {
     text-align: center;
 }
 
-/* Mobile screen styling */
-@media screen and (max-width: 480px), screen and (max-device-width: 480px){   
-    
-    .boardArea {
-        display:flex;
-        flex-direction: column;
-    }
-
-    .side1 {
-        order:3;
-    }
-
-    .area2 {
-        order:2;
-    }
-    .centreArea {
-        order:1;
-    }
-
-    .pieceLine {
-        width:65px;
-        height:65px;
-    }
-
-    
-}     
-
-@media screen and (min-width: 481px) and (max-width: 768px), screen and (min-device-width: 481px) and (max-device-width: 768px) {   
-    .boardArea {
-        display:flex;
-        flex-direction: column;
-    }
-
-    .side1 {
-        order:3;
-    }
-
-    .area2 {
-        order:2;
-    }
-    .centreArea {
-        order:1;
-    }
-
-    .pieceLine {
-        width:80px;
-        height:80px;
-        
-    }
-} 
-
-/* Mobile screen styling */
-@media screen and (max-width: 768px){   
-              
-   body{
-       padding-top: 60px;
-   }
-
-   .gameContainer {
-        display:flex;
-        flex-direction:column;
-        margin-top:30px;
-    }
-    .leftPanel {
-        order:3;
-    }
-
-    .rightPanel {
-        order:2;
-    }
-
-    .gamePanel {
-        order:1;
-    }
-
-    .memBox {
-        height:75px;
-    }
-
 /* Conundrum Game CSS */
 
 #instruction {
@@ -284,56 +205,6 @@ p {
     height:40px;
     padding-top: 10px;
 }
-
-/* Mobile screen styling */
-@media screen and (max-width: 480px){   
-
-    .letterBox {
-        width:25px;
-        height:25px;
-        font-size:18px;
-    }
-
-    .area1 {
-        order:3;
-    }
-
-    .area2 {
-        order:2;
-    }
-    .centreArea {
-        order:1;
-    }
-
-    .mainArea {
-        
-        flex-direction: column;
-    }
-}     
-
-@media screen and (min-width: 481px) and (max-width: 768px){   
-    .letterBox {
-        width:50px;
-        height:50px;
-        font-size:30px;
-    }
-    .mainArea {
-        display:flex;
-        flex-direction: column;
-    }
-    .area1 {
-        order:3;
-    }
-
-    .area2 {
-        order:2;
-    }
-    .centreArea {
-        order:1;
-    }
-}    
-
-/* BoardSwap Game CSS */
 
 #instructions {
     text-align: center;
@@ -411,8 +282,50 @@ p {
 }
 
 /* Mobile screen styling */
-@media screen and (max-width: 480px){   
+@media screen and (max-width: 480px), screen and (max-device-width: 480px){   
     
+    .boardArea {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .side1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+
+    .pieceLine {
+        width:65px;
+        height:65px;
+    }
+       .letterBox {
+        width:25px;
+        height:25px;
+        font-size:18px;
+    }
+
+    .area1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+
+    .mainArea {
+        
+        flex-direction: column;
+    }
+
     .boardArea {
         display:flex;
         flex-direction: column;
@@ -433,11 +346,52 @@ p {
         width:65px;
         height:65px;
     }
-
     
 }     
 
-@media screen and (min-width: 481px) and (max-width: 768px){   
+@media screen and (min-width: 481px) and (max-width: 768px), screen and (min-device-width: 481px) and (max-device-width: 768px) {   
+    .boardArea {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .side1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+
+    .pieceLine {
+        width:80px;
+        height:80px;
+        
+    }
+
+    .letterBox {
+        width:50px;
+        height:50px;
+        font-size:30px;
+    }
+    .mainArea {
+        display:flex;
+        flex-direction: column;
+    }
+    .area1 {
+        order:3;
+    }
+
+    .area2 {
+        order:2;
+    }
+    .centreArea {
+        order:1;
+    }
+
     .boardArea {
         display:flex;
         flex-direction: column;
@@ -460,3 +414,33 @@ p {
         
     }
 } 
+
+/* Mobile screen styling */
+@media screen and (max-width: 768px){   
+              
+   body{
+       padding-top: 60px;
+   }
+
+   .gameContainer {
+        display:flex;
+        flex-direction:column;
+        margin-top:30px;
+    }
+    .leftPanel {
+        order:3;
+    }
+
+    .rightPanel {
+        order:2;
+    }
+
+    .gamePanel {
+        order:1;
+    }
+
+    .memBox {
+        height:75px;
+    }
+
+}   
