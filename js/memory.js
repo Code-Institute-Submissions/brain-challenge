@@ -45,10 +45,6 @@ function setPreviousBox(number) {
 
 //pick a random box to make flash (the first box, to start the game)
 function pickRandomFlash() {
-	//add to the round counter, which starts at zero
-	roundCounter++;
-	//add to the score, which starts at -1
-	score++;
 	//get a random box number
 	var number = getRandom();
 	//record which box has flashed
@@ -201,6 +197,8 @@ function monitorClicks(){
 	    	//if all clicks have been correctly made, continue with a new box
 	    	if ((storedSequence.length == clickedSequence.length) && (gameStatus)) {
 	    		continueGame();
+	    		console.log("score: " + score);
+				console.log("roundCounter: " + roundCounter);
 	    	}
 	    }
 	}
@@ -257,9 +255,9 @@ function initialiseRound() {
 	gameStatus = true;
 	storedSequence = [];
 	clickedSequence = [];
-	roundCounter = 0;
+	roundCounter = 1;
 	clickCounter = 0;
-	score = roundCounter - 1;
+	score = roundCounter-1;
 	showRound();
 
 	//reset score on screen
